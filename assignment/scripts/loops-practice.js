@@ -27,6 +27,13 @@ for(i = 0; i < 6; i += 1){
   }
   }
 
+  // Code change for re submission. ß
+  for(i = 2; i < 6; i += 1){
+    if(i %2 === 0){
+      console.log(i);
+    }
+  }
+
 // 1.c. TODO: Write a for loop to console.log EVEN numbers from 2 to 10
 //   - Which part of the example loop do you need to change to do this?
 console.log('count even numbers from 2 to 10 (2, 4, 6, 8, 10):');
@@ -36,6 +43,7 @@ for(i = 0; i < 11; i += 1){
     console.log(i);
   }
 }
+
 
 // 1.d. (STRETCH) TODO: Write a for loop to do a countdown from 5 to 0
 console.log('STRETCH: countdown from 5 to 0');
@@ -53,10 +61,13 @@ let stars = ['Polaris', 'Gacrux', 'Formalhaut', 'Rigel', 'Deneb']
 // 2.a. TODO: Write a for of loop to console.log each star in the 'stars' array
 console.log('Some stars:');
 
-for( i = 0; i < stars.length; i += 1){
+/*for( i = 0; i < stars.length; i += 1){
   console.log( stars[i] );
 }
-
+*/
+for(let star of stars){
+  console.log("star: " , star);
+}
 
 // 3. While loops  
 console.log('---- 3. While loop ----');
@@ -82,4 +93,9 @@ while( num <= 5){
 }
 // 3.c. TODO: Write a while loop to console.log the numbers from 10 to 5
 console.log('count backwards from 10 to 5');
+let count = 10;
 
+while(count >= 5){
+  console.log(count);
+  count --;
+}
